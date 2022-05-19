@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sign Up - Mechatronica Engineering Research & Development</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="./assets/slider.css" media="all" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- slider cdn -->
+  <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css"> -->
+
+<style>
+  .dropdown-menu{padding:0;margin:0;border:0 solid transition!important;border-radius:0;-webkit-box-shadow:none!important;box-shadow:none!important}
+.mainmenu a, .navbar-default .navbar-nav > li > a, .mainmenu ul li a , .navbar-expand-lg .navbar-nav .nav-link{color:#fff;font-size:16px;text-transform:capitalize;font-family:'Roboto',sans-serif;display: block !important;}
+.mainmenu .active a,.mainmenu .active a:focus,.mainmenu .active a:hover,.mainmenu li a:hover,.mainmenu li a:focus ,.navbar-default .navbar-nav>.show>a, .navbar-default .navbar-nav>.show>a:focus, .navbar-default .navbar-nav>.show>a:hover{color: #fff;outline: 0;}
+/*==========Sub Menu=v==========*/
+.mainmenu .collapse ul > li:hover > a{}
+.mainmenu .collapse ul ul > li:hover > a, .navbar-default .navbar-nav .show .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .show .dropdown-menu > li > a:hover{background: #1E88E5; border-bottom:1px solid #64B5F6;}
+.mainmenu .collapse ul ul ul > li:hover > a{
+    top: -3px;
+    border-left: 5px solid transparent;
+
+}
+
+.mainmenu .collapse ul ul, .mainmenu .collapse ul ul.dropdown-menu{ border-bottom: 0px;} 
+.mainmenu .collapse ul ul ul, .mainmenu .collapse ul ul ul.dropdown-menu{border-bottom: 0px;}
+.mainmenu .collapse ul ul ul ul, .mainmenu .collapse ul ul ul ul.dropdown-menu{background:#64B5F6}
+
+/******************************Drop-down menu work on hover**********************************/
+.mainmenu{background: none;border: 0 solid;margin: 0;padding: 0;min-height:20px;width: 100%;}
+@media only screen and (min-width: 767px) {
+.mainmenu .collapse ul li:hover> ul{display:block}
+.mainmenu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
+/* main nav links*/
+.mainmenu .collapse {
+    list-style: none;
+    *zoom: 1;
+
+}
+
+.mainmenu .collapse:before,
+.mainmenu .collapse:after {
+    content: " ";
+    display: table;
+}
+
+.mainmenu .collapse:after {
+    clear: both;
+}
+
+.mainmenu .collapse ul {
+    list-style: outside none none;
+}
+
+.mainmenu .collapse a {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+    padding: 17px 20px !important;
+    text-transform: uppercase;
+}
+.mainmenu .collapse a i{
+  padding-left: 6px;
+}
+
+.mainmenu .collapse a:hover {
+    color: #16a9d1;
+}
+.mainmenu .collapse a:hover i{
+  color: white !important;
+}
+
+.mainmenu .collapse a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #16a9d1;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    position: relative;
+    bottom: -20px;
+}
+
+.mainmenu .collapse a:hover:after {
+    transform: scaleX(1);
+}
+
+.mainmenu .collapse a span {
+    display: block;
+    text-align: center;
+}
+
+.mainmenu .collapse li {
+    position: relative;
+}
+
+.mainmenu .collapse li:last-child:after {
+    display: none;
+}
+/* end main nav links */
+
+
+/* dropdowns and sub menu */
+.mainmenu .collapse ul ul li{
+    display: block;
+    background: #16a9d1;
+    position: relative;
+    z-index: 100;
+    text-transform: inherit;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+}
+.mainmenu .collapse ul ul ul li{
+  border-bottom: none !important;
+  margin-bottom: 0;
+}
+.mainmenu .collapse ul ul ul li:hover{
+  margin-top: 3px;
+}
+
+.mainmenu .collapse li li a {
+    display: block;
+    background: #16a9d1;
+    position: relative;
+    z-index: 100;
+    text-transform: inherit;
+    font-size: 14px;
+    border-bottom: 3px solid #fff;
+}
+
+.mainmenu .collapse li li a:hover {
+    color: #fff;
+}
+.mainmenu .collapse li li li{
+  margin-left: 0px;
+  background: transparent !important;
+}
+.mainmenu .collapse li li li a {
+    display: block;
+    background: #16a9d1;
+    position: relative;
+    z-index: 100;
+    text-transform: inherit;
+    font-size: 14px;
+    border-bottom: 3px solid #fff;
+}
+
+.mainmenu .collapse li li li a:hover {
+    color: #fff;
+}
+.mainmenu .collapse li ul li:hover ul {
+    top: -3px;
+    border-left: 3px solid transparent;
+}
+
+.mainmenu .collapse li li li a {
+    background: #004f96;
+    z-index: 200;
+    border-bottom: 3px solid #fff;
+}
+.mainmenu .collapse li li li:hover a{
+  border-bottom: none;
+  
+}
+
+.mainmenu .collapse li li a {
+  border-bottom: none;
+}
+
+.mainmenu .collapse li li li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #16a9d1;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    position: relative;
+    bottom: -20px;
+}
+
+.mainmenu .collapse li li li a:hover:after {
+    transform: scaleX(1);
+}
+
+.mainmenu .collapse li li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #004f96;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    position: relative;
+    bottom: -20px;
+}
+
+.mainmenu .collapse li li a:hover:after {
+    transform: scaleX(1);
+}
+/* end dropdown and sub menu */
+
+@media only screen and (max-width: 767px){
+.toggleMenu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+}
+}
+
+.mainmenu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+/*******/
+.mainmenu .collapse ul ul ul li{position:relative}
+.mainmenu .collapse ul ul ul li:hover ul{display:block}
+.mainmenu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+}
+@media only screen and (max-width: 767px) {
+.navbar-nav .show .dropdown-menu .dropdown-menu > li > a{padding:16px 15px 16px 35px}
+.navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu > li > a{padding:16px 15px 16px 45px}
+}
+</style>
+
+</head>
+
+<body data-rsssl=1
+  class="home page-template page-template-page-templates page-template-front-page page-template-page-templatesfront-page-php page page-id-6 template-front-page custom-font-enabled">
+  <div id="mainwrapper">
+    <div class="header">
+      <div class="container clearfix">
+        <div class="col-sm-3">
+          <div class="logo sticky">
+            <a href="index.html">
+              <img src="./assets/images/logo.png">
+            </a>
+          </div>
+          <!--logo-->
+        </div>
+        <!--col-sm-3-->
+        <div class="col-sm-9">
+          <div class="top-one">
+            <div class="signin">
+              <ul>
+                <li id="menu-item-757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-757"><a
+                    href="./Sign_in.html">Sign In</a></li>
+                <li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a
+                    href="./Sign_up.html">Sign Up</a></li>
+              </ul>
+            </div>
+            <!--signin-->
+            <div class="social">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://linkedin.com/company/mechatronica-engineering-research-&amp;-development"><i
+                      class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <!--social-->
+          </div>
+          <!--top-one-->
+          <div class="menus">
+            <nav class="navbar navbar-2 navbar-light navbar-expand-md mainmenu">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto ">
+                      <li class="dropdown">
+                        <a href="./index.html"  id="navbarDropdown"> Home <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="./why_selecting _mechtronica.html">Why Selecting Mechatronica</a></li>
+                        <li><a href="./Working_with_our_clients.html">Working with Our Clients</a></li>
+                        </ul>
+                    </li>         
+                      <li class="dropdown">
+                        <a href="./services.html"  id="navbarDropdown"> Services <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a href="./project_studies.html">Project Studies</a></li>
+                          <li class="dropdown">
+                            <a href="./engineering_&_design.html"  id="navbarDropdown"> Engineering & Design<i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li ><a href="./Studies_and_calculations.html">Studies & Calculations</a></li>
+                            <li><a href="./Layouts_and_details.html">Layouts & Details</a></li>
+                            <li><a href="./Power_system_analysis.html">Power System Analysis</a></li>
+                            <li><a href="./PLC_and_protection_relay.html">PLC & Protection Relay Programming</a></li>
+                            </ul>
+                        </li>
+                          <li><a href="./panel_shop_design.html">Panel Shop Design</a></li>
+                          <li><a href="./procurement_support.html">Procurement Support</a></li>
+                          <li><a href="./field_engineering.html">Field Engineering</a></li>
+                          </ul>
+                      </li>
+                    <li class="dropdown">
+                      <a href="./projects.html"  id="navbarDropdown"> Projects <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a href="./petrochemical_oil_and _gas.html">Petrochemical, Oil & Gas Projects</a></li>
+                          <li><a href="./Industrial_and_utility_projects.html">Industrial & Utility Projects</a></li>
+                          <li><a href="./Military_projects.html">Military Projects</a></li>
+                          <li><a href="./Residential_commercial_and_public_service.html">Residential, Commercial & Public Service Facilities</a></li>
+                          <li><a href="./Renewable_energy_projects.html">Renewable Energy Projects</a></li>
+                          <li class="dropdown">
+                            <a href="./Project_with_specialized_scope.html"  id="navbarDropdown"> Projects with specialized scope <i class="fa fa-angle-right"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li ><a href="./Power_system_studies.html">Power System Studies</a></li>
+                            <li><a href="./PLC_networks_and_cabinet.html">PLC Networks & Cabinets</a></li>
+                            </ul>
+                        </li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">KNOWLEDGE BASE <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Whitepapers</a></li>
+                        <li><a href="#">Design Tools</a></li>
+                        <li><a href="#">Design Tools</a></li>
+                        </ul>
+                    </li>
+                      <li><a href="./Contact_us.html">CONTACT US</a></li>
+                  </ul>
+              </div>
+           </nav>
+          </div>
+          <!--menus-->
+        </div>
+        <!--col-sm-9-->
+      </div>
+      <!--container-->
+    </div>
+    <!--header-->
+      </div>
+    
+      <div class="middle">
+        <div class="container">
+        <div class="sign-up">
+        Sign Up
+        <div class="tml tml-register" id="theme-my-login1">
+        <form name="registerform" id="registerform1" action="/mechatonic/register/?instance=1" method="post">
+        <p class="tml-user-login-wrap">
+        <label for="full_name1">Full name*</label>
+        <input type="text" name="full_name" id="full_name1" class="input" value="" size="20" tabindex="20">
+        </p>
+        <p class="tml-user-login-wrap">
+        <label for="user_login1">Username*</label>
+        <input type="text" name="user_login" id="user_login1" class="input" value="" size="20">
+        </p>
+        <p class="tml-user-login-wrap">
+        <label for="com_name1">Company name</label>
+        <input type="text" name="com_name" id="com_name1" class="input" value="" size="20" tabindex="20">
+        </p>
+        <p class="tml-user-login-wrap">
+        <label for="industry_typ1">Industry Type</label>
+        <select name="industry_typ" class="input">
+        <option value="">Select</option>
+        <option value="Utilities – Generation">Utilities – Generation</option>
+        <option value="Utilities – Transmission">Utilities – Transmission</option>
+        <option value="Utilities – Distribution">Utilities – Distribution</option>
+        <option value="Oil &amp; Gas / Petrochemical">Oil &amp; Gas / Petrochemical</option>
+        <option value="Manufacturing – Switchboards / Control Panel">Manufacturing – Switchboards / Control Panel</option>
+        <option value="Manufacturing Others">Manufacturing Others</option>
+        <option value="Residential / Commercial">Residential / Commercial</option>
+        <option value="Public Services">Public Services</option>
+        <option value="Renewable Energy">Renewable Energy</option>
+        <option value="PLC Networks">PLC Networks</option>
+        </select>
+        </p>
+        <p class="tml-user-login-wrap">
+        <label for="country1">Country</label>
+        <select name="country" class="input">
+        <option value="">Select</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Anguilla">Anguilla</option>
+        <option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Aruba">Aruba</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Brunei Darussalam">Brunei Darussalam</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burma">Burma</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Cayman Islands">Cayman Islands</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo">Congo</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cote D’Ivoire">Cote D’Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Curacao">Curacao</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Cyprus">Czechia</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Dominica">Dominica</option>
+        <option value="East Timor">East Timor</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="French Guiana">French Guiana</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gambia">Gambia</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Greece">Greece</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guinea">Guinea</option> 
+        <option value="Guinea-Bissau">Guinea-Bissau</option> 
+        <option value="Haiti">Haiti</option>
+        <option value="Holy See">Holy See</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran">Iran</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Kosovo">Kosovo</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Laos">Laos</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Libya">Libya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Macau">Macau</option>
+        <option value="Macedonia">Macedonia</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Martinique">Martinique</option>
+        <option value="Marshall Island">Marshall Island</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mayotte">Mayotte</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia">Micronesia</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="North Korea">North Korea</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Pacific Islands">Pacific Islands</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Palestine">Palestine</option>
+        <option value="Panama">Panama</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Romania">Romania</option>
+        <option value="Russian Federation">Russian Federation</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Lucia">Saint Kitts and Nevis</option>
+        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+        <option value="Samoa">Samoa</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saint Muar Ten ">Saint Muar Ten </option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Korea">South Korea</option>
+        <option value="South Sudan">South Sudan</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Syria">Syria</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Timor Leste">Timor Leste</option>
+        <option value="Togo">Togo</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Turkey">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Turkey">Tuvalu</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States of America (USA)">United States of America (USA)</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Virgin Islands (UK)">Virgin Islands (UK)</option>
+        <option value="Virgin Islands (US)">Virgin Islands (US)</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        </select>
+        </p>
+        <p class="tml-user-login-wrap">
+        <label for="phone1">Phone Number</label>
+        <input type="text" name="phone" id="phone1" class="input" value="" size="20" tabindex="20">
+        </p>
+        <p class="tml-user-email-wrap">
+        <label for="user_email1">E-mail*</label>
+        <input type="text" name="user_email" id="user_email1" class="input" value="" size="20">
+        </p>
+        <p class="tml-user-pass1-wrap">
+        <label for="pass1">Password*</label>
+        <input autocomplete="off" name="pass1" id="pass1" class="input" size="20" value="" type="password">
+        </p>
+        <p class="tml-user-pass2-wrap">
+        <label for="pass2">Confirm Password*</label>
+        <input autocomplete="off" name="pass2" id="pass2" class="input" size="20" value="" type="password">
+        </p>
+        <p class="tml-registration-confirmation" id="reg_passmail1"></p>
+        <p class="tml-submit-wrap">
+        <input type="submit" name="wp-submit" id="wp-submit1" value="Sign Up">
+        <input type="hidden" name="redirect_to" value="http://bzbeetech.com/mechatonic/login/?pending=activation">
+        <input type="hidden" name="instance" value="1">
+        <input type="hidden" name="action" value="register">
+        </p>
+        </form>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-loog">
+          <a href="index.html">
+            <img src="./assets/images/logo.png">
+          </a>
+        </div>
+        <!--footer-loog-->
+        <div class="get-touch clearfix">
+          <div class="col-sm-5">
+            <div class="add">
+              <div class="ad-head">Get in Touch</div>
+              <!--ad-head-->
+              <div class="ad-list">
+                <div class="add-icon">
+                  <img src="./assets/images/phone.png" alt="">
+                </div>
+                <div class="ad-desc">
+                  <a href="tel:+1 587 336 2362" class="comon" target="_blank">
+                    <p class="m-0">Phone</p>
+                    <p class="m-0">+1 587 336 2362</p>
+                  </a>
+                </div>
+              </div>
+              <!--ad-list-->
+              <div class="ad-list">
+                <div class="add-icon">
+                  <img src="./assets/images/message.png" alt="">
+                </div>
+                <div class="ad-desc">
+                  <a href="contact-us.html" class="comon" target="_blank">
+                    <p class="m-0">email</p>
+                    <p class="m-0">info@mechatronica.ca</p>
+                  </a>
+                </div>
+              </div>
+              <!--ad-list-->
+              <div class="ad-list">
+                <div class="add-icon">
+                  <img src="./assets/images/location.png" alt="">
+                </div>
+                <div class="ad-desc">
+                  <a class="comon"
+                    href="https://www.google.ca/maps/place/1724+32+St+NW,+Edmonton,+AB+T6T+0K3/@53.444964,-113.3899776,17z/data=!3m1!4b1!4m5!3m4!1s0x53a0197bf6325ba1:0x56821a1c2e04221f!8m2!3d53.4449608!4d-113.3877889"
+                    target="_blank">
+                    <p class="m-0">address</p>
+                    <p class="m-0">1724 32 Street NW<br />Edmonton, Alberta, T6T 0P5<br />Canada</p>
+                  </a>
+                </div>
+              </div>
+              <!--ad-list-->
+            </div>
+            <!--add-->
+          </div>
+          <!--col-sm-4-->
+          <div class="col-sm-7">
+            <div class="conta-frm">
+              <div class="sign-in">
+                <div class="tml tml-login" id="theme-my-login1">
+                  <form name="loginform" id="loginform1" action="https://mechatronica.ca/login/" method="post">
+                    <p class="tml-user-login-wrap">
+                      <!-- <label for="user_login1">Username or E-mail</label> -->
+                      <input type="text" name="log" id="user_login1" class="input" value="" size="20"
+                        placeholder="Username" />
+                    </p>
+                    <p class="tml-user-pass-wrap">
+                      <!-- <label for="user_pass1">Password</label> -->
+                      <input type="password" name="pwd" id="user_pass1" class="input" value="" size="20"
+                        autocomplete="off" placeholder="Password" />
+                    </p>
+                    <input type="hidden" name="_wp_original_http_referer" value="/" />
+                    <div class="tml-rememberme-submit-wrap">
+                      <!-- <p class="tml-rememberme-wrap">
+<input name="rememberme" type="checkbox" id="rememberme1" value="forever" />
+<label for="rememberme1">Remember Me</label>
+</p> -->
+                      <div class="r1">
+                        <a class="forgot-pass comon" href="lostpassword.html">Forgot Your Password ?</a>
+                      </div>
+                      <p class="tml-submit-wrap">
+                        <input type="submit" name="wp-submit" id="wp-submit1" value="Sign In" />
+                        <input type="hidden" name="redirect_to" value="https://mechatronica.ca" />
+                        <input type="hidden" name="instance" value="1" />
+                        <input type="hidden" name="action" value="login" />
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--conta-frm-->
+            <div class="f-social">
+              <ul>
+                <li>Follow us on :</li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <!-- <li><a href="#">
+  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="26" height="26"
+viewBox="0 0 32 32"
+class="main-plus"
+style=" fill:#ffffff;"><path d="M 18.683594 15.40625 C 18.683594 13.429688 21.894531 13.257813 21.894531 9.394531 C 21.894531 6.597656 19.949219 5.257813 19.75 5.136719 L 21.6875 5.136719 L 23.625 4 L 17.347656 4 C 10.960938 4 9.9375 8.46875 9.9375 9.949219 C 9.9375 12.15625 11.664063 14.898438 15.136719 14.898438 C 15.453125 14.898438 15.789063 14.878906 16.144531 14.839844 C 16.085938 15.003906 15.835938 15.566406 15.835938 16.074219 C 15.835938 17.136719 16.515625 17.8125 16.75 18.222656 C 12.949219 18.1875 8.375 19.835938 8.375 23.503906 C 8.375 24.84375 9.527344 28 14.941406 28 C 21.117188 28 22.988281 24.1875 22.988281 22.050781 C 22.984375 17.96875 18.683594 17.292969 18.683594 15.40625 Z M 16.585938 14.042969 C 14.425781 14.042969 12.601563 11.324219 12.601563 8.417969 C 12.601563 7.554688 13.015625 5.046875 15.40625 5.046875 C 18.484375 5.046875 19.234375 9.609375 19.234375 10.851563 C 19.234375 11.140625 19.4375 14.042969 16.585938 14.042969 Z M 16.4375 26.679688 C 14.457031 26.679688 11.039063 25.835938 11.039063 22.835938 C 11.039063 21.796875 11.644531 19.082031 16.902344 19.082031 C 17.171875 19.082031 17.40625 19.09375 17.605469 19.113281 C 18.699219 19.929688 20.964844 21.109375 20.964844 23.28125 C 20.964844 24.265625 20.378906 26.679688 16.4375 26.679688 Z"></path></svg>
+  <i class="fa fa-google-plus"></i>
+</a></li> -->
+                <li><a href="https://linkedin.com/company/mechatronica-engineering-research-&amp;-development"><i
+                      class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <!--f-social-->
+          </div>
+          <!--col-sm-8-->
+        </div>
+        <!--get-touch-->
+      </div>
+      <!--container-->
+      <div class="copy-right">
+        <div class="container">The contents of this Website are copyrighted to Mechatronica Engineering Research &
+          Development Ltd. and shall not be used without permission</div>
+      </div>
+    </div>
+    <!--footer-->
+  </div>
+  <!--mainwrapper-->
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src="./script.js"></script>
+
+  <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+  <script src="./script.js"></script>
+  <!-- <script>
+    (function($){
+	$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+	  if (!$(this).next().hasClass('show')) {
+		$(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+	  }
+	  var $subMenu = $(this).next(".dropdown-menu");
+	  $subMenu.toggleClass('show');
+
+	  $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+		$('.dropdown-submenu .show').removeClass("show");
+	  });
+	  return false;
+	});
+})(jQuery)
+  </script> -->
+
+  <script>
+    $(document).ready(function () {
+      $("#news-slider").owlCarousel({
+        items: 3,
+        slideTransition: 'linear',
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        autoPlay: true,
+        pagination: true,
+        loop: true,
+        rewindNav: false
+
+
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#slider-2").owlCarousel({
+        items: 3,
+        loop: true,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        pagination: true,
+        autoPlay: true,
+        rewindNav: false,
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".bar-btn").click(function () {
+        $(".nav").toggleClass("nav2");
+      });
+    });
+
+
+
+    $(window).scroll(function () {
+      var sticky = $('.sticky'),
+        scroll = $(window).scrollTop();
+
+      if (scroll >= 100) sticky.addClass('fixed');
+      else sticky.removeClass('fixed');
+    });
+  </script>
+
+  <!-- slider projects -->
+ 
+
+  
+
+</body>
+
+<!-- Mirrored from mechatronica.ca/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Apr 2022 04:58:57 GMT -->
+
+</html><!-- WP Fastest Cache file was created in 0.49099683761597 seconds, on 11-11-19 9:21:52 -->
+<!-- via php -->
